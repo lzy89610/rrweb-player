@@ -58,7 +58,7 @@
     </button>
     {/each}
     <Switch id="skip" bind:checked="skipInactive" disabled="{isSkipping}" label="skip inactive" />
-    <button on:click="fire('fullscreen')">
+    <button class="fullscreen-btn" on:click="fire('fullscreen')">
       <svg
         class="icon"
         viewBox="0 0 1024 1024"
@@ -87,7 +87,7 @@
         currentTime: 0,
         isPlaying: false,
         isSkipping: false,
-        skipInactive: true,
+        skipInactive: false,
         speed: 1,
       };
     },
@@ -321,4 +321,9 @@
   .rr-controller__btns button:disabled {
     cursor: not-allowed;
   }
+
+  .fullscreen-btn{
+    visibility: hidden;
+  }
+
 </style>
