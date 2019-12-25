@@ -1,5 +1,5 @@
 {
-  "name": "rrweb-player",
+  "name": "mywre-player",
   "version": "0.3.17",
   "devDependencies": {
     "eslint": "^5.10.0",
@@ -16,7 +16,7 @@
     "svelte": "^2.16.0"
   },
   "dependencies": {
-    "rrweb": "../rrweb"
+    "mywre": "^0.7.261"
   },
   "scripts": {
     "build": "rollup -c",
